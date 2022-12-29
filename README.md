@@ -1,6 +1,6 @@
 # Learner's Journal
 
-The journey of learning computer science from scratch can be quite bumpy. There are numerous tools and commands to learn and the commands might be slightly different between operating systems (Linux, macOS, Windows etc.). As the learning goes on, there are high tendencies of forgetting what was learned earlier or getting confused about the command used for which tool. Hence, this Learner's Journal is created to have a quick reference on the commonly used commands of the tools that the author learned or tried with her computer's software environment.  
+The journey of learning computer science from scratch can be quite bumpy. There are numerous tools and commands to learn and the commands might be slightly different between operating systems (Linux, macOS, Windows etc.). As the learning goes on, there are high tendencies of forgetting what were learned earlier and confusion about the commands used for each tool. Hence, this Learner's Journal is created to have a quick reference on the commonly used commands of the tools that the author learned or tried with her computer's software environment.  
 
 > Note: The commands are mainly workable for the following software environment:  
 >
@@ -11,5 +11,5 @@ The journey of learning computer science from scratch can be quite bumpy. There 
 
 ## License  
 
-![MIT](https://img.shields.io/github/license/perrigoh/learner_journal)  
+![license](https://img.shields.io/github/license/perrigoh/learner_journal)  
 MIT License  
