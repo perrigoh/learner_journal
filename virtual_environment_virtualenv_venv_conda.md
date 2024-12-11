@@ -50,6 +50,9 @@ Steps:
 
     ```bash
     $ cd virtual_env/
+    ```
+    Output:
+    ```bash
     NO OUTPUT
     ```
 
@@ -59,7 +62,10 @@ Steps:
    `virtualenv` is the command, `project_webapp` is the name of the environment
 
     ```bash
-    $ python -m virtualenv project_webapp  
+    $ python -m virtualenv project_webapp
+    ```
+    Output:
+    ```bash  
     created virtual environment CPython3.9.13.final.0-64 in 10658ms
     creator Venv(dest=C:\Users\wmxpg\virtual_env\project_webapp, clear=False, no_vcs_ignore=False, global=False, describe=CPython3Windows)
     seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\wmxpg...\pypa\virtualenv)
@@ -84,6 +90,9 @@ Steps:
 
     ```bash
     $ cd virtual_env/
+    ```
+    Output:
+    ```bash
     NO OUTPUT
     ```
 
@@ -93,7 +102,11 @@ Steps:
    `virtualenv` is the command, `project_testpyversion` is the name of the environment, `-p`= `--python`, `"C:\...\Pythonxxx\python.exe"` is the path of the Python executable file  
 
     ```bash
-    $ python -m virtualenv project_testpyversion -p "C:\Users\wmxpg\AppData\Local\Programs\Python\Python311\python.exe"
+    $ python -m virtualenv project_testpyversion -p 
+    ```
+    Output:
+    ```bash
+    "C:\Users\wmxpg\AppData\Local\Programs\Python\Python311\python.exe"
     created virtual environment CPython3.11.0.final.0-64 in 6214ms
     creator CPython3Windows(dest=C:\Users\wmxpg\virtual_env\project_testpyversion, clear=False, no_vcs_ignore=False, global=False)
     seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\wmxpg\AppData\Local\Packages\PythonSoftwareFoundation.Python
@@ -114,6 +127,9 @@ Steps:
 
     ```bash
     $ cd virtual_env/project_webapp/
+    ```
+    Output:
+    ```bash
     NO OUTPUT
     ```
 
@@ -123,6 +139,9 @@ Steps:
 
     ```bash
     $ ls
+    ```
+    Output:
+    ```bash
     Include/  Lib/  pyvenv.cfg  Scripts/
     ```
 
@@ -132,7 +151,11 @@ Steps:
     $ . Scripts/activate
     # or
     $ source Scripts/activate
+    ```
+    Output:
+    ```bash
     (project_webapp)
+    [wmxpg] ~/virtual_env/project_webapp
     ```
 
     The name of the virtual environment within the parentheses will appear above the prompt.
@@ -146,6 +169,9 @@ Activate the virtual environment first, then run the command:
 
 ```bash
 $ which python
+```
+Output:
+```bash
 /c/Users/wmxpg/virtual_env/project_webapp/Scripts/python
 ```
 
@@ -167,6 +193,9 @@ Steps:
 
     ```bash
     $ cd virtual_env/
+    ```
+    Output:
+    ```bash
     NO OUTPUT
     ```
 
@@ -177,6 +206,9 @@ Steps:
 
     ```bash
     $ python -m virtualenv test_virtualenv_syspackage --system-site-packages  
+    ```
+    Output:
+    ```bash
     created virtual environment CPython3.9.13.final.0-64 in 2437ms
     ...
        activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
@@ -188,6 +220,9 @@ Steps:
 
     ```bash
     $ ls
+    ```
+    Output:
+    ```bash
     project_testpyversion/  project_webapp/  test_virtualenv_syspackage/
     ```
 
@@ -199,7 +234,11 @@ Steps:
     $ . test_virtualenv_syspackage/Scripts/activate
     # or
     $ source test_venv_syspackage/Scripts/activate
+    ```
+    Output:
+    ```bash
     (test_virtualenv_syspackage)
+    [wmxpg] ~/virtual_env/test_virtualenv_syspackage
     ```  
 
     The name of the virtual environment within the parentheses will appear above the prompt.
@@ -209,6 +248,9 @@ Steps:
 
     ```bash
     $ pip list
+    ```
+    Output:
+    ```bash
     Package                           Version
     --------------------------------- -----------
     analytics-python                  1.4.0
@@ -225,6 +267,9 @@ Steps:
 
     ```bash
     $ pip list --local
+    ```
+    Output:
+    ```bash
     Package    Version
     ---------- -------
     pip        22.0.4
@@ -239,6 +284,9 @@ Steps:
 
 ```bash
 $ deactivate
+```
+Output:
+```bash
 NO OUTPUT
 ```
 
@@ -253,6 +301,9 @@ Before running the command, deactivate the virtual environment and ensure that t
 
 ```bash
 $ rm -r testvirtualenv
+```
+Output:
+```bash
 NO OUTPUT
 ```
 
@@ -282,6 +333,9 @@ Steps:
 
     ```bash
     $ cd virtual_env/
+    ```
+    Output:
+    ```bash
     NO OUTPUT
     ```
 
@@ -292,6 +346,9 @@ Steps:
 
     ```bash
     $ python -m venv test_venv  
+    ```
+    Output:
+    ```bash
     NO OUTPUT
     ```
 
@@ -301,6 +358,9 @@ Steps:
 
     ```bash
     $ ls
+    ```
+    Output:
+    ```bash
     project_testpyversion/  project_webapp/  test_venv/
     ```
 
@@ -315,10 +375,14 @@ Steps:
 1. This method goes straight to activate the environment, instead of checking the `Scripts` folder inside the virtual environment folder:
 
     ```bash
-        $ . test_venv/Scripts/activate
-        # or
-        $ source test_venv/Scripts/activate
-        (test_venv)
+    $ . test_venv/Scripts/activate
+    # or
+    $ source test_venv/Scripts/activate
+    ```
+    Output:
+    ```bash    
+    (test_venv)
+    [wmxpg] ~/virtual_env/test_venv
     ```
 
     The name of the virtual environment within the parentheses will appear above the prompt.
@@ -328,6 +392,9 @@ Steps:
 
     ```bash
     $ where python
+    ```
+    Output:
+    ```bash
     C:\Users\wmxpg\virtual_env\test_venv\Scripts\python.exe
     C:\Users\wmxpg\AppData\Local\Microsoft\WindowsApps\python.exe
     C:\Users\wmxpg\anaconda3\python.exe
@@ -339,6 +406,9 @@ Steps:
 
     ```bash
     $ which python
+    ```
+    Output:
+    ```bash
     /c/Users/wmxpg/virtual_env/\Users\wmxpg\virtual_env\test_venv/Scripts/python
     ```
 
@@ -356,6 +426,9 @@ Steps:
 
     ```bash
     $ cd virtual_env/
+    ```
+    Output:
+    ```bash
     NO OUTPUT
     ```
 
@@ -366,6 +439,9 @@ Steps:
 
     ```bash
     $ python -m venv test_venv_syspackage --system-site-packages  
+    ```
+    Output:
+    ```bash
     NO OUTPUT
     ```
 
@@ -375,6 +451,9 @@ Steps:
 
     ```bash
     $ ls
+    ```
+    Output:
+    ```bash
     project_testpyversion/  project_webapp/  test_venv_syspackage/
     ```
 
@@ -386,7 +465,11 @@ Steps:
     $ . test_venv_syspackage/Scripts/activate
     # or
     $ source test_venv_syspackage/Scripts/activate
+    ```
+    Output:
+    ```bash
     (test_venv_syspackage)
+    [wmxpg] ~/virtual_env/test_venv_syspackage
     ```  
 
     The name of the virtual environment within the parentheses will appear above the prompt.
@@ -396,6 +479,9 @@ Steps:
 
     ```bash
     $ pip list
+    ```
+    Output:
+    ```bash
     Package                           Version
     --------------------------------- -----------
     analytics-python                  1.4.0
@@ -412,6 +498,9 @@ Steps:
 
     ```bash
     $ pip list --local
+    ```
+    Output:
+    ```bash
     Package    Version
     ---------- -------
     pip        22.0.4
@@ -426,6 +515,9 @@ Steps:
 
 ```bash
 $ deactivate
+```
+Output:
+```bash
 NO OUTPUT
 ```
 
@@ -440,6 +532,9 @@ Before running the command, deactivate the virtual environment and ensure that t
 
 ```bash
 $ rm -r test_venv
+```
+Output:
+```bash
 NO OUTPUT
 ```
 
@@ -463,7 +558,9 @@ Activate the virtual environment first:
 $ pip list
 # or
 $ python -m pip list
-
+```
+Output:
+```bash
 Package    Version
 ---------- -------
 pip        22.3.1
@@ -483,6 +580,9 @@ Steps:
     $ pip install numpy
     # or
     $ python -m pip install numpy
+    ```
+    Output:
+    ```bash
     Collecting numpy
     Downloading numpy-1.23.5-cp39-cp39-win_amd64.whl (14.7 MB)
     ...
@@ -491,6 +591,10 @@ Steps:
 
 2. List the installed package in this environment:
 
+    ```bash
+    $ pip list
+    ```
+    Output:
     ```bash
     Package    Version
     ---------- -------
@@ -512,6 +616,9 @@ Use `pip freeze -l` or `pip freeze --local` for exporting only local installed p
 $ pip freeze > requirements.txt
 # or 
 $ python -m  pip freeze > requirements.txt
+```
+Output:
+```bash
 NO OUTPUT
 ```
 
@@ -523,6 +630,9 @@ The requirements.txt file will be created and saved in the current working direc
 
 ```bash
 $ cat requirements.txt
+```
+Output:
+```bash
 numpy==1.23.5
 ```
 
@@ -536,6 +646,9 @@ Steps:
 
     ```bash
     $ cd virtual_env/project_webapp/
+    ```
+    Output:
+    ```bash
     NO OUTPUT
     ```
 
@@ -546,15 +659,22 @@ Steps:
 
     ```bash
     $ pip install -r requirements.txt
+    ```
+    Output:
+    ```bash
     Collecting numpy==1.23.5
     Downloading numpy-1.23.5-cp311-cp311-win_amd64.whl (14.6 MB)
     ...
     Successfully installed numpy-1.23.5
+    ```
 
 3. Check the package has been installed:
 
     ```bash
     $ pip list
+    ```
+    Output:
+    ```bash
     Package    Version
     ---------- -------
     numpy      1.23.5
@@ -584,6 +704,9 @@ To check the python versions available for installation [info source](https://co
 
 ```bash
 $ conda search python
+```
+Output:
+```bash
 Loading channels: done
 # Name                       Version           Build  Channel
 python                        2.7.13     h1b6d89f_16  pkgs/main
@@ -604,6 +727,9 @@ Create virtual environment with Python:
 
 ```bash
 $ conda create --name testcondaenv python
+```
+Output:
+```bash
 Collecting package metadata (current_repodata.json): done
 ...
 Proceed ([y]/n)? y
@@ -618,6 +744,7 @@ To activate the Conda environment:
 ```bash
 $ conda activate testcondaenv
 (testcondaenv)
+[wmxpg] ~/vitrual_env/project_webapp/testcondaenv
 ```  
 
 The name of the virtual environment within the parentheses will appear above the prompt.  
@@ -632,6 +759,9 @@ Steps:
 
     ```bash
     $ cd project_datascience/
+    ```
+    Output:
+    ```bash
     NO OUTPUT
     ```
 
@@ -642,6 +772,9 @@ Steps:
 
     ```bash
     $ conda create --prefix ./testcondadiffdir python=3.9
+    ```
+    Output:
+    ```bash
     Collecting package metadata (current_repodata.json): done
     Solving environment: done
     ...
@@ -656,6 +789,9 @@ Steps:
     $ conda env list
     # or
     $ conda info --envs
+    ```
+    Output:
+    ```bash
     # conda environments:
     #
     base                     C:\Users\wmxpg\anaconda3
@@ -670,7 +806,11 @@ Steps:
 
     ```bash
     $ conda activate ./testcondadiffdir
-    (C:\Users~/project_datasciencemxpg\project_datascience02:30:33estcondadiffdir)
+    ```
+    Output:
+    ```bash
+    (C:\Users~/project_datasciencewmxpg\project_datascience02:30:33estcondadiffdir)
+    [wmxpg] ~/project_datascience
     ```
 
     A path-like string within the parentheses will appear above the prompt.  
@@ -685,6 +825,9 @@ Activate the virtual environment first, then run the command:
 $ conda env list
 # or
 $ conda info --envs
+```
+Output:
+```
 # conda environments:
 #
 base                     C:\Users\wmxpg\anaconda3
@@ -708,6 +851,9 @@ If the preference is to use the pip install command refer to the above section -
 
 ```bash
 $ conda install numpy 
+```
+Output:
+```bash
 Collecting package metadata (current_repodata.json): done
 Solving environment: done
 ...
@@ -735,6 +881,9 @@ Conda will install the specified package and all the dependencies of the package
 
 ```bash
 $ conda install --name testcondaenv numpy=1.22
+```
+Output:
+```bash
 Collecting package metadata (current_repodata.json): done
 ...
 The following NEW packages will be INSTALLED:
@@ -765,6 +914,9 @@ NumPy version 1.22.3 has been installed instead of the latest Conda available ve
 
 ```bash
 $ conda list
+```
+Output:
+```bash
 # packages in environment at C:\Users\wmxpg\anaconda3\envs\testcondaenv:
 #
 # Name                    Version                   Build  Channel
@@ -781,6 +933,9 @@ zlib                      1.2.13               h8cc25b3_0
 
 ```bash
 $ conda list -n testcondaenv
+```
+Output:
+```bash
 # packages in environment at C:\Users\wmxpg\anaconda3\envs\testcondaenv:
 #
 # Name                    Version                   Build  Channel
@@ -801,6 +956,9 @@ zlib                      1.2.13               h8cc25b3_0
 
 ```bash
 $ conda list --export > testcondaenv_packages.txt
+```
+Output:
+```bash
 NO OUTPUT
 ```
 
@@ -811,6 +969,9 @@ A `testcondaenv_package.txt` file is created in the current working directory (f
 
 ```bash
 $ conda list -n testcondaenv --export > testcondaenv_package.txt
+```
+Output:
+```bash
 NO OUTPUT
 ```
 
@@ -849,6 +1010,9 @@ Steps:
 
     ```bash
     $ cd anaconda3/envs/testcondaenv
+    ```
+    Output:
+    ```bash
     NO OUTPUT
     ```
 
@@ -859,6 +1023,9 @@ Steps:
 
     ```bash
     $ conda create -n newcondaenv --file testcondaenv_package.txt
+    ```
+    Output:
+    ```bash
     Collecting package metadata (current_repodata.json): done
     ...
     environment location: C:\Users\wmxpg\anaconda3\envs\newcondaenv
@@ -893,6 +1060,9 @@ Steps:
 
 ```bash
 $ conda remove numpy
+```
+Output:
+```bash
 Collecting package metadata (repodata.json): done
 Solving environment: done
 ...
@@ -920,6 +1090,9 @@ Conda will remove the specified package and all the dependencies of the package.
 
 ```bash
 $ conda remove -n testcondaenv numpy
+```
+Output:
+```bash
 Collecting package metadata (repodata.json): done
 ...
 The following packages will be REMOVED:
@@ -945,6 +1118,9 @@ Conda will remove the specified package and all the dependencies of the package.
 
 ```bash
 $ conda deactivate
+```
+Output:
+```bash
 NO OUTPUT
 ```
 
@@ -958,7 +1134,9 @@ Before running the command, deactivate the virtual environment:
 
 ```bash
 $ conda remove --name testcondaenv --all
-
+```
+Output:
+```bash
 Remove all packages in environment C:\Users\wmxpg\anaconda3\envs\testcondaenv:
 ...
 Proceed ([y]/n)? y
@@ -982,6 +1160,9 @@ This might happen after the computer had been shut down or restarted. Though, ru
 ```bash
 
 $ conda env list
+```
+Output:
+```bash
 # conda environments:
 #
 base                     C:\Users\wmxpg\anaconda3
@@ -995,6 +1176,9 @@ but not able to activate the environment:
 
 ```bash
 $ conda activate testcondaenv
+```
+Output:
+```bash
 CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
 If using 'conda activate' from a batch script, change your
 invocation to 'CALL conda.bat activate'.
@@ -1022,6 +1206,9 @@ Run the Conda init command, specifying which shell:
 
 ```bash
 $ conda init bash
+```
+Output:
+```bash
 no change     C:\Users\wmxpg\anaconda3\Scripts\conda.exe
 no change     C:\Users\wmxpg\anaconda3\Scripts\conda-env.exe
 no change     C:\Users\wmxpg\anaconda3\Scripts\conda-script.py
