@@ -1,13 +1,20 @@
 # Learner's Journal
 
-The journey of learning computer science from scratch can be quite bumpy. There are numerous tools and commands to learn and the commands might be slightly different between operating systems (Linux, macOS, Windows etc.). As the learning goes on, there are high tendencies of forgetting what were learned earlier and confusion about the commands used for each tool. Hence, this Learner's Journal is created to have a quick reference on the commonly used commands of the tools that the author learned or tried with her computer's software environment.  
+The journey of learning about AI from scratch can be quite bumpy. It starts with learning various programming languages,
+acquiring knowledge to work with data, understanding machine learning and building user interfaces.
 
-> Note: The commands are mainly workable for the following software environment:  
+With this much to learn, the ability to retain what was learned in the early stage will probably get lost somewhere. 
+Hence, this Learner's Journal was born to document some references and provide guides for future use.
+
+https://github.com/perrigoh/learner_journal/wiki
+
+> Note: As different systems have their requirements to work, the following are the software environments used:  
 >
 > * Operating system: Windows 11 Home
 > * Source code editor: Visual Studio Code 1.73.0
 > * Terminal : Git Bash 4.4.23(1)-release run in Visual Studio Code
 > * Python: 3.9.13
+
 
 ## License  
 
